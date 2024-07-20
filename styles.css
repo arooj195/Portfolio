@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin:0;
+  padding: 0%;
+  color: white;
+  font-family: 'sans-serif',Segoe UI, Tahoma, Geneva, Verdana;
+}
+#navbar{
+    width:100%;
+    background-color: brown;
+    color:white;
+    height:75px;
+   overflow: hidden;
+   margin:0;
+   padding: 0;
+    position:fixed;
+   top:0;
+}
+#navbar  ul{
+    display: flex;
+    justify-content:flex-end;
+}
+#navbar ul li{
+    list-style-type: none;
+     padding:25px 25px 25px 30px; 
+}
+#navbar li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;  
+}
+#navbar li a:hover{
+    background-color: rgb(55, 55, 211);
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   height: 100vh;  
+    width:100%;
+    background-color: black;
+    margin: 0;
+    color: white;
+    /* padding: 23em; */
+}
+h1{
+    text-align: center;
+    font-size: 4.2em;
+    margin-bottom:0;
+}
+#about p{
+ color:brown;
+ font-size: 1.8em;
+ text-align: center;
+ margin: 0;
+ padding: 0;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width:100%; */
+    background-color:rgb(8, 8, 78);
+    margin:0;
+    padding: 45px;
+}
+#projects h2{
+    line-height: 1.5;
+  text-decoration:underline;
+   padding-bottom: 10px;
+}
+#contact{
+    /* width:100%; */
+    background-color: rgb(85, 82, 82);
+    margin:0;
+    text-align: center;
+    padding:70px;
+}
+#projects #images{
+display: flex;
+flex-wrap: wrap;
+object-fit: cover;
+justify-content: center;
+}
+ #projects #images a{
+     display:flex;
+      flex-direction:column;
+      justify-content: baseline; 
+      text-decoration: none;
+} 
+#projects #images a p{
+    text-align: center;
+    color:white;
+    background-color:brown;
+    padding: 7px;
+    margin: 0 9px  0 9px ;
+}
+#projects #images a p:hover{
+    background-color: blue;
+}
+img{
+    height:300px; 
+    width: 400px;
+    padding: 10px;
+}
+#projects button{
+     background-color: brown;
+    margin: 40px;
+     width:100px;
+     height: 30px;
+}
+#projects button:hover{
+    background-color: blue;
+}
+#projects button a{
+    text-decoration: none;
+    color: white;
+}
+h2{
+ font-size: 3em;
+ padding: 0;
+ margin:0;
+ text-align: center;
+}
+#contact p{
+    font-size: 1.5em;
+    font-weight:lighter;
+    margin: auto;
+}
+#contact a{
+    text-decoration: none;
+    color:white;
+    font-size:1.6em;
+    padding: 30px;
+}
+#contact #contact_info{
+    padding-top: 30px;
+}
+ footer{
+    display: flex;
+   justify-content: space-evenly;
+    background-color: rgb(85, 82, 82);
+    border-top: 3px solid brown;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: blue;
+}
+@media (max-width:800px) 
+{
+    *{
+        box-sizing: border-box;
+      /* width:100%; */ 
+    }
+    #navbar{
+        width:790px;
+        background-color: brown;
+        color:white;
+       overflow: hidden;
+       margin:0;
+        position:fixed;
+        top:0;
+        left:0;
+    }
+    #navbar  ul{
+        display: flex;
+        justify-content:flex-end;
+    }
+    #navbar ul li{
+        list-style-type: none;
+         padding: 10px; 
+         font-size: medium;
+    }
+    h1{
+        text-align: center;
+        font-size: 2em;
+        margin-bottom:0;
+    }
+    #projects button{
+        background-color: brown;
+        margin: 15px;
+        width:100px;
+        height: 30px;
+   }
+   #about{
+    height: 100vh; 
+    width:790px;
+     background-color: black;
+     margin: 0;
+     color: white;
+     padding: 230px;
+ }
+   #about p{
+    color:brown;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+   }
+   #projects{
+    width:790px;
+    background-color:rgb(8, 8, 78);
+    margin:0;
+    /* width: 100%; */
+   padding: 35px;
+}
+h2{
+    font-size: 1.3em;
+    padding: 0;
+    margin:0;
+    text-align: center;
+   }
+   #contact{
+    background-color: rgb(85, 82, 82);
+    margin:0;
+    text-align: center;
+    padding:30px;
+    width:790px;
+}
+#contact a{
+    text-decoration: none;
+    color:white;
+    font-size:0.6em;
+    padding: 15px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+    background-color: rgb(85, 82, 82);
+    width:790px;
+}
+}
